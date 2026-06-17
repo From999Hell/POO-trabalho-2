@@ -1,0 +1,38 @@
+src/
+│
+├── app/
+│   └── Main.java
+│
+├── domain/
+│   ├── Professor.java
+│   ├── Disciplina.java
+│   ├── Horario.java
+│   ├── Alocacao.java
+│   ├── Grade.java
+│   ├── DiaSemana.java
+│   ├── Periodo.java
+│   └── Competencia.java
+│
+├── service/
+│   ├── GeradorGradeService.java
+│   ├── VerificadorConflitosService.java
+│   ├── MatchService.java
+│   └── strategy/
+│       ├── MatchStrategy.java
+│       ├── CompetenciaStrategy.java
+│       └── InteresseAlunoStrategy.java
+│
+├── exception/
+│   ├── ConflitoHorarioException.java
+│   ├── DadosInvalidosException.java
+│   └── AlocacaoInvalidaException.java
+│
+├── repository/
+│   └── DadosExemploRepository.java
+│
+└── gui/
+    ├── TelaPrincipal.java
+    ├── PainelProfessores.java
+    ├── PainelDisciplinas.java
+    ├── PainelGrade.java
+    └── PainelConflitos.java
