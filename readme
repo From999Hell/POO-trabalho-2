@@ -1,7 +1,129 @@
-echo "# POO-trabalho-2" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/From999Hell/POO-trabalho-2.git
-git push -u origin main
+# POO - Trabalho Prático 2
+
+## Integrantes
+
+* Thomaz Gottliebs
+* Iago Leao
+* Rodrigo 
+
+> **Contribuição declarada:** Todos os integrantes participaram da modelagem, implementação, testes e documentação do projeto.
+(Ajuste esta seção conforme a contribuição real de cada membro.)
+
+## Objetivo
+
+Desenvolver uma ferramenta em **Java** com interface gráfica para auxiliar na geração de uma sugestão de grade de horários
+acadêmica. O sistema considera as competências dos professores, as disciplinas disponíveis, os horários cadastrados
+e critérios de alocação, além de identificar possíveis conflitos de horário.
+
+O projeto foi desenvolvido como atividade da disciplina de Programação Orientada a Objetos,
+aplicando conceitos de orientação a objetos, interfaces, coleções, tratamento de exceções e o padrão de projeto Strategy.
+
+## Funcionalidades
+
+* Cadastro e carregamento de professores.
+* Cadastro e carregamento de disciplinas.
+* Definição de horários (dias e períodos).
+* Geração automática de sugestão de grade.
+* Verificação de conflitos de horários.
+* Exibição da grade gerada na interface gráfica.
+* Suporte a diferentes estratégias de correspondência (Match Strategy).
+
+## Estrutura do Projeto
+
+```text
+src/
+│
+├── app/            -> Inicialização da aplicação
+├── domain/         -> Entidades do domínio
+├── service/        -> Regras de negócio
+├── service/strategy/ -> Estratégias de geração de correspondência
+├── repository/     -> Dados de exemplo
+├── exception/      -> Exceções personalizadas
+└── gui/            -> Interface gráfica (Swing)
+```
+
+---
+
+## Tecnologias Utilizadas
+
+* Java
+* Java Swing
+* Programação Orientada a Objetos (POO)
+* Git
+* GitHub
+
+
+## Conceitos Aplicados
+
+* Encapsulamento
+* Abstração
+* Polimorfismo
+* Interfaces (Contratos)
+* Tratamento de Exceções
+* Coleções Java
+* Padrão de Projeto Strategy
+* Separação de responsabilidades em camadas
+
+## Como Executar
+
+### Pré-requisitos
+
+* Java JDK 17 ou superior (ou a versão utilizada pelo grupo)
+* Uma IDE Java, como IntelliJ IDEA, Eclipse ou NetBeans
+
+### Passos
+
+1. Clone o repositório:
+
+```bash
+git clone https://github.com/From999Hell/POO-trabalho-2.git
+```
+
+2. Abra o projeto na sua IDE.
+
+3. Aguarde o carregamento das dependências (caso necessário).
+
+4. Execute a classe:
+
+```text
+src/app/Main.java
+```
+
+5. A interface principal será aberta.
+
+---
+
+## Organização da Aplicação
+
+A aplicação foi dividida em camadas para facilitar a manutenção e a reutilização do código.
+
+* **Domain:** representa as entidades do sistema.
+* **Repository:** fornece os dados utilizados pela aplicação.
+* **Service:** implementa as regras de negócio.
+* **Strategy:** define diferentes estratégias para realizar o processo de correspondência entre professores e disciplinas.
+* **GUI:** apresenta a interface gráfica ao usuário.
+* **Exception:** concentra as exceções específicas da aplicação.
+
+---
+
+## Exemplo de Fluxo
+
+1. Carregar os dados de exemplo.
+2. Visualizar professores e disciplinas.
+3. Gerar uma sugestão de grade.
+4. Verificar conflitos.
+5. Exibir o resultado na interface gráfica.
+
+---
+
+## Repositório
+
+Repositório oficial do projeto:
+
+https://github.com/From999Hell/POO-trabalho-2
+
+---
+
+## Licença
+
+Projeto desenvolvido exclusivamente para fins acadêmicos na disciplina de Programação Orientada a Objetos.
