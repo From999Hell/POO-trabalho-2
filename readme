@@ -6,8 +6,8 @@
 * Iago Leao
 * Rodrigo 
 
-> **Contribuição declarada:** Todos os integrantes participaram da modelagem, implementação, testes e documentação do projeto.
-(Ajuste esta seção conforme a contribuição real de cada membro.)
+Contribuição declarada: Todos os integrantes participaram da modelagem, implementação, testes e documentação do projeto.
+
 
 ## Objetivo
 
@@ -40,9 +40,6 @@ src/
 ├── repository/     -> Dados de exemplo
 ├── exception/      -> Exceções personalizadas
 └── gui/            -> Interface gráfica (Swing)
-```
-
----
 
 ## Tecnologias Utilizadas
 
