@@ -13,17 +13,12 @@ public class Main {
 
     public static void main(String[] args) {
 
-        // Repositório com dados de exemplo
         DadosExemploRepository repository =
                 new DadosExemploRepository();
 
-        // Estratégia de match
-        CompetenciaStrategy strategy =
-                new CompetenciaStrategy();
-
-        // Serviços
         MatchService matchService =
-                new MatchService(strategy);
+                new MatchService(
+                        new CompetenciaStrategy());
 
         VerificadorConflitosService verificador =
                 new VerificadorConflitosService();
@@ -33,7 +28,6 @@ public class Main {
                         matchService,
                         verificador);
 
-        // Inicializa GUI
         SwingUtilities.invokeLater(() -> {
 
             TelaPrincipal tela =
@@ -43,6 +37,9 @@ public class Main {
                             verificador);
 
             tela.setVisible(true);
+
         });
+
     }
+
 }
